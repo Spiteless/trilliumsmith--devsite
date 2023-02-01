@@ -2,18 +2,37 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  experimental: {
-    optimizeUniversalDefaults: true,
-  },
+  // experimental: {
+  //   optimizeUniversalDefaults: true,
+  // },
   content: [
-    './pages/**/*.js',
-    './components/**/*.js',
-    './layouts/**/*.js',
-    './lib/**/*.js',
+    './pages/**/*.{html,js,jsx}',
+    './components/**/*.{html,js,jsx}',
+    './layouts/**/*.{html,js,jsx}',
+    './lib/**/*.{html,js,jsx}',
     './data/**/*.mdx',
   ],
   darkMode: 'class',
   theme: {
+    screens: {
+      xs: '475px',
+      // => @media (min-width: 640px) { ... }
+
+      sm: '640px',
+      // => @media (min-width: 640px) { ... }
+
+      md: '768px',
+      // => @media (min-width: 768px) { ... }
+
+      lg: '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      xl: '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
       spacing: {
         '9/16': '56.25%',
@@ -28,7 +47,8 @@ module.exports = {
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: colors.teal,
+        primary: colors.green,
+        secondary: colors.orange,
         gray: colors.neutral,
       },
       typography: (theme) => ({
@@ -55,6 +75,16 @@ module.exports = {
             h3: {
               fontWeight: '600',
               color: theme('colors.gray.900'),
+            },
+            button: {
+              fontWeight: '600',
+              color: theme('colors.gray.900'),
+              '&:focus': {
+                border: `${theme('colors.primary-500')} !important`,
+              },
+              '&:hover': {
+                color: `${theme('colors.primary.400')} !important`,
+              },
             },
             'h4,h5,h6': {
               color: theme('colors.gray.900'),
