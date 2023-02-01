@@ -5,6 +5,7 @@ tags: ['hello']
 draft: true
 summary:
 images: []
+draft: true
 ---
 
 Draft post which should not display
