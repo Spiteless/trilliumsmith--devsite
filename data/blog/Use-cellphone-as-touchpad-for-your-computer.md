@@ -1,9 +1,9 @@
 ---
-title: O Canada
+title: Remote Desktop with Cellphone
 date: '2021-01-01'
 tags: ['Talon Voice', 'Remote Desktop']
 draft: false
-summary: The scenic lands of Canada featuring maple leaves, snow-capped mountains, turquoise lakes and Toronto. Take in the sights in this photo gallery exhibition and see how easy it is to replicate with some MDX magic and tailwind classes.
+summary: Easily contorl your computer from your phone
 ---
 
 # Easily contorl your computer from your phone
