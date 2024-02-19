@@ -11,7 +11,7 @@
     "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts"
   },
   "engines": {
-    "node": ">=18.17.0"
+    "node": "20.11.1"
   },
   "dependencies": {
     "@next/bundle-analyzer": "14.1.0",
